@@ -103,7 +103,7 @@ h6 {
 }
 
 .main-container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -121,8 +121,8 @@ h6 {
 }
 
 .fa-dungeon {
-    margin-top: 20px;
-    color: gold;
+    margin-top: 15px;
+    color: white;
 }
 
 .greeting-wrapper {
@@ -262,52 +262,6 @@ h6 {
     align-content: center;
     animation: slideInFromRight 2s linear;
     color: white;
-}
-
-#preview {
-    width: 300px;
-    border: solid 1.5px wheat;
-    background-color: var(--previewBg);
-    padding: 15px;
-    font-family: monospace;
-    position: relative;
-}
-
-.corner {
-    height: 7px;
-    width: 7px;
-    border-radius: 50%;
-    border: solid 1.5px #5c114d;
-    background-color: goldenrod;
-    position: absolute;
-}
-
-#corner-tl {
-    top: -5px;
-    left: -5px;
-}
-
-#corner-tr {
-    top: -5px;
-    right: -5px;
-}
-
-#corner-br {
-    bottom: -5px;
-    right: -5px;
-}
-
-#corner-bl {
-    bottom: -5px;
-    left: -5px;
-}
-
-#preview-shadow {
-    background-color: var(--previewShadow);
-    width: 300px;
-    height: 178px;
-    padding-left: 30px;
-    padding-top: 30px;
 }
 
 hr {
