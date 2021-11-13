@@ -506,7 +506,20 @@ ol li {
     text-align: center;
     font-family: 'Rubik beastly';
 }
+@media screen and (max-width: 370px) {
+    .social-links {
+        text-align: unset;
+    }
+    .right-column {
+        margin-bottom: 50px;
+        margin-right: 20px;
+        min-height: 3rem;
+    }
+    #navigation {
+        font-size: 8px;
+    }
 
+}
 @media screen and (max-width: 500px) {
     .social-links {
         text-align: unset;
@@ -514,15 +527,21 @@ ol li {
     .right-column {
         margin-bottom: 50px;
         margin-right: 20px;
+        object-fit: contain;
     }
     #navigation {
         font-size: 12px;
+    }
+      .main-container {
+        max-width: 75%;
+        margin: 0 auto;
+        object-fit: contain;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .main-container {
-        width: 95%;
+        max-width: 95%;
         margin: 0 auto;
     }
 }
@@ -533,7 +552,7 @@ ol li {
         grid-template-areas: "nav-wrap" "left-wrap" "right-wrap";
     }
     .main-container {
-        width: 85%;
+        max-width: 85%;
         margin: 0 auto;
     }
     .greeting-wrapper {
@@ -545,10 +564,11 @@ ol li {
         animation: slideInFromTop 2s linear;
     }
     h1 {
-        font-size: 26px;
+        font-size: 16px;
     }
     .right-column {
         justify-content: center;
+        min-height: 5em;
     }
     .about-wrapper {
         display: grid;
@@ -564,12 +584,12 @@ ol li {
     }
     .fa-dungeon {
         margin-top: 20px;
-        color: yellow;
+        color: whitesmoke;
         position: relative;
         left: 100px;
     }
     .slider {
         margin: unset;
-        margin-left: 140px;
+        margin-left: 50p%;
     }
 }
