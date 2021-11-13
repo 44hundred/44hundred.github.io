@@ -492,7 +492,7 @@ h6.pst {
     }
     .slider {
         margin: unset;
-        margin-left: 140px;
+        margin-left: 120px;
     }
     #navigation {
         font-size: 12px;
@@ -513,7 +513,7 @@ h6.pst {
         padding-bottom: 50px;
     }
     .main-container {
-        width: 85%;
+        width: 95%;
         margin: 0 auto;
     }
     .greeting-wrapper {
