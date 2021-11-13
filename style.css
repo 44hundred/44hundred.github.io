@@ -146,6 +146,7 @@ h6 {
     grid-area: nav-wrap;
     border-bottom: 2px solid rgb(92, 87, 87);
     display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background: linear-gradient(90deg, white, rgb(19, 128, 123));
@@ -484,7 +485,7 @@ h6.pst {
     font-family: 'Monoton';
 }
 
-@media screen and (max-width: 500px) {
+@media screen and (max-width: 480px) {
     .right-column {
         margin-bottom: 50px;
         margin-right: 20px;
@@ -522,6 +523,9 @@ h6.pst {
         align-content: center;
         animation: slideInFromTop 2s linear;
     }
+    .nav-wrapper {
+        width: fit-content;
+    }    
     h1 {
         font-size: 18px;
     }
