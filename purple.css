@@ -149,6 +149,7 @@ h6 {
     align-items: center;
     background: linear-gradient(90deg, white, lightseagreen);
     border-radius: 5px 5px 0 0;
+    flex-wrap:wrap;
 }
 
 .dots-wrap {
@@ -259,51 +260,6 @@ h6 {
     color: white;
 }
 
-#preview {
-    width: 300px;
-    border: solid 1.5px #5c114d;
-    background-color: var(--previewBg);
-    padding: 15px;
-    font-family: monospace;
-    position: relative;
-}
-
-.corner {
-    height: 7px;
-    width: 7px;
-    border-radius: 50%;
-    border: solid 1.5px #5c114d;
-    background-color: lightseagreen;
-    position: absolute;
-}
-
-#corner-tl {
-    top: -5px;
-    left: -5px;
-}
-
-#corner-tr {
-    top: -5px;
-    right: -5px;
-}
-
-#corner-br {
-    bottom: -5px;
-    right: -5px;
-}
-
-#corner-bl {
-    bottom: -5px;
-    left: -5px;
-}
-
-#preview-shadow {
-    background-color: var(--previewShadow);
-    width: 300px;
-    height: 178px;
-    padding-left: 30px;
-    padding-top: 30px;
-}
 
 hr {
     border: none;
@@ -499,7 +455,22 @@ ol li {
     text-align: center;
     font-family: 'Rubik beastly';
 }
-
+@media screen and (max-width: 370px) {
+    .social-links {
+        text-align: unset;
+    }
+    .right-column {
+        margin-bottom: 50px;
+        margin-right: 20px;
+    }
+    #navigation {
+        font-size: 8px;
+    }
+    .slider {
+        margin:0 auto;
+    }    
+    
+}
 @media screen and (max-width: 500px) {
     .social-links {
         text-align: unset;
@@ -515,7 +486,7 @@ ol li {
 
 @media screen and (max-width: 1200px) {
     .main-container {
-        width: 95%;
+        max-width: 95%;
         margin: 0 auto;
     }
 }
@@ -526,7 +497,7 @@ ol li {
         grid-template-areas: "nav-wrap" "left-wrap" "right-wrap";
     }
     .main-container {
-        width: 85%;
+        max-width: 85%;
         margin: 0 auto;
     }
     .greeting-wrapper {
@@ -538,7 +509,7 @@ ol li {
         animation: slideInFromTop 2s linear;
     }
     h1 {
-        font-size: 26px;
+        font-size: 16px;
     }
     .right-column {
         justify-content: center;
@@ -563,6 +534,6 @@ ol li {
     }
     .slider {
         margin: unset;
-        margin-left: 140px;
+        margin-left: 0 50%;
     }
 }
