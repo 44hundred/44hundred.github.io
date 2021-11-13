@@ -98,7 +98,7 @@ h6 {
 }
 
 .main-container {
-    width: 1200px;
+    max-width: 1200px;
     margin: 0 auto;
 }
 
@@ -259,14 +259,6 @@ h6 {
     animation: slideInFromRight 2s linear;
 }
 
-#preview {
-    width: 300px;
-    border: solid 1.5px #5c114d;
-    background-color: var(--previewBg);
-    padding: 15px;
-    font-family: monospace;
-    position: relative;
-}
 
 .corner {
     height: 7px;
@@ -275,34 +267,6 @@ h6 {
     border: solid 1.5px #5c114d;
     background-color: lightseagreen;
     position: absolute;
-}
-
-#corner-tl {
-    top: -5px;
-    left: -5px;
-}
-
-#corner-tr {
-    top: -5px;
-    right: -5px;
-}
-
-#corner-br {
-    bottom: -5px;
-    right: -5px;
-}
-
-#corner-bl {
-    bottom: -5px;
-    left: -5px;
-}
-
-#preview-shadow {
-    background-color: var(--previewShadow);
-    width: 300px;
-    height: 178px;
-    padding-left: 30px;
-    padding-top: 30px;
 }
 
 hr {
@@ -409,6 +373,7 @@ hr {
     margin-bottom: 100px;
     border-radius: 0 70px 70px 0;
     font-family: cursive;
+    flex-wrap: wrap;
 }
 
 .navbar a:hover {
@@ -484,8 +449,20 @@ ol li {
 h6.pst {
     font-family: 'Monoton';
 }
-
-@media screen and (max-width: 480px) {
+@media screen and (max-width: 370px) {
+    .right-column {
+        margin-bottom: 50px;
+        margin-right: 20px;
+    }
+    .slider {
+        margin: unset;
+        margin-left: 50%;
+    }
+    #navigation {
+        font-size: 8px;
+    }
+}
+@media screen and (max-width: 500px) {
     .right-column {
         margin-bottom: 50px;
         margin-right: 20px;
@@ -501,7 +478,7 @@ h6.pst {
 
 @media screen and (max-width: 1200px) {
     .main-container {
-        width: 95%;
+        max-width: 95%;
         margin: 0 auto;
     }
 }
@@ -513,7 +490,7 @@ h6.pst {
         padding-bottom: 50px;
     }
     .main-container {
-        width: 95%;
+        max-width: 95%;
         margin: 0 auto;
     }
     .greeting-wrapper {
@@ -523,11 +500,9 @@ h6.pst {
         align-content: center;
         animation: slideInFromTop 2s linear;
     }
-    .nav-wrapper {
-        width: fit-content;
-    }    
+      
     h1 {
-        font-size: 18px;
+        font-size: 16px;
     }
     .right-column {
         justify-content: center;
