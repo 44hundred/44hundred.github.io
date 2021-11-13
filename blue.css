@@ -504,6 +504,20 @@ ol li {
     text-align: center;
     font-family: 'Rubik beastly';
 }
+@media screen and (max-width: 370px) {
+    .social-links {
+        text-align: unset;
+    }
+    .right-column {
+        margin-bottom: 50px;
+        margin-right: 20px;
+        min-height: 3rem;
+    }
+    #navigation {
+        font-size: 8px;
+    }
+
+}
 
 @media screen and (max-width: 500px) {
     .social-links {
@@ -512,15 +526,22 @@ ol li {
     .right-column {
         margin-bottom: 50px;
         margin-right: 20px;
+        min-height: 4rem;
     }
     #navigation {
         font-size: 12px;
+        
+    }
+     .main-container {
+        max-width: 75%;
+        margin: 0 auto;
+        Object-fit: contain;
     }
 }
 
 @media screen and (max-width: 1200px) {
     .main-container {
-        width: 95%;
+        max-width: 95%;
         margin: 0 auto;
     }
 }
@@ -531,7 +552,7 @@ ol li {
         grid-template-areas: "nav-wrap" "left-wrap" "right-wrap";
     }
     .main-container {
-        width: 85%;
+        max-width: 85%;
         margin: 0 auto;
     }
     .greeting-wrapper {
