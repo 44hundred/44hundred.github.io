@@ -376,10 +376,6 @@ hr {
     flex-wrap: wrap;
 }
 
-.navbar a:hover {
-    border-bottom: 2px solid var(--mainText);
-    transition: border-bottom .1s linear;
-}
 
 
 /*Animations */
